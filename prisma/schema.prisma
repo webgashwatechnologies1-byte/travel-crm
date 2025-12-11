@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -41,7 +41,7 @@ model Blog {
   metaDescription String?
   metaKeywords    String?
   bannerImage     String?
-  content         String   @db.LongText // TinyMCE HTML
+  content         String  
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
 }
