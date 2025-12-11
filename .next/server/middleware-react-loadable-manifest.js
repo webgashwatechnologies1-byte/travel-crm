@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"app\\\\page.js -> @/components/3d/ParticleField\":{\"id\":\"app\\\\page.js -> @/components/3d/ParticleField\",\"files\":[\"static/chunks/_app-pages-browser_components_3d_ParticleField_jsx.js\"]}}"
