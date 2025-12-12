@@ -12,7 +12,7 @@ export async function POST(req) {
       );
     }
 
-    const leads = await prisma.lEADS.create({
+    const leads = await prisma.Lead.create({
       data: { name, email, phone, company, message },
     });
 
@@ -28,7 +28,7 @@ export async function POST(req) {
 
 export async function GET() {
   try {
-    const leads = await prisma.lEADS.findMany({
+    const leads = await prisma.Lead.findMany({
       orderBy: { createdAt: "desc" },
     });
 
